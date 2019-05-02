@@ -5,6 +5,8 @@ using UnityEngine;
 public class Map : MonoBehaviour
 {
     private Vector3 startPos;
+    [SerializeField] private Vector2 minPos;
+    [SerializeField] private Vector2 maxPos;
     [SerializeField] private float minZoom;
     [SerializeField] private float maxZoom;
     void Start()
@@ -15,22 +17,16 @@ public class Map : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Panning();
+        ClampingPos();
     }
-    public void Panning()
+
+    public void ClampingPos()
     {
-         if(Input.GetMouseButtonDown(0))
-        { 
-            startPos = transform.position;
-        }
-
-        if(transform.position != startPos)
-        {
-            transform.position = Input.mousePosition;
-        }
+        transform.position = new Vector2 (Mathf.Clamp(transform.position.x,minPos.x,maxPos.x),Mathf.Clamp(transform.position.y,minPos.y,maxPos.y));
+       
     }
 
-    public void Zoom()
+    /* public void Zoom()
     {
         if(Input.touchCount == 2)
         {
@@ -44,8 +40,7 @@ public class Map : MonoBehaviour
             float prevMagnitude = (touchZeroPrevPos - touchOnePrevPos).magnitude;
             float currentMagnitude = (touchZero.position - touchOne.position).magnitude;
 
-            float difference = currentMagnitude - prevMagnitude;
-            
+            float difference = currentMagnitude - prevMagnitude;  
         }
-    }
+    } */
 }

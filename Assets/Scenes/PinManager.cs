@@ -1,0 +1,69 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class PinManager : MonoBehaviour
+{
+    [SerializeField] private Image icon;
+    [SerializeField] private Text name;
+    [SerializeField] private Text description;
+    private string previousID;
+    private bool changeBox;
+
+    [SerializeField] private GameObject navBtns;
+    [SerializeField] private GameObject pinInfoBox;
+
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        changeBox = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void ShowInfo(Sprite pinIcon, string pinName,string pinDescription,string ID)
+    {
+        icon.sprite = pinIcon;
+        name.text = pinName;
+        description.text = pinDescription;
+        
+        if(previousID != ID)
+        {
+            previousID = ID;
+            changeBox = false;
+        }
+        else
+        {
+            changeBox = true;
+        }
+        
+    }
+
+    public void ToggleBoxes()
+    {
+        //clicou num pin com a navegação aberta
+        if(navBtns.activeSelf)
+        {
+            navBtns.SetActive(false);
+            pinInfoBox.SetActive(true);
+        }
+        //clicou num pin , enquanto olhava outro pin
+       else if (pinInfoBox.activeSelf && !changeBox)
+        {
+            //navBtns.SetActive(true);
+           // pinInfoBox.SetActive(false);
+        }
+        //clicou no mesmo pin que estava antes
+        else if (pinInfoBox.activeSelf && changeBox)
+        {
+            navBtns.SetActive(true);
+            pinInfoBox.SetActive(false);
+        }
+    }
+}
