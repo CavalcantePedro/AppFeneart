@@ -157,7 +157,7 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
     /// </summary>
     public void OnInitialized(TargetFinder targetFinder)
     {
-        Debug.Log("ModelReco initialized.");
+       // Debug.Log("ModelReco initialized.");
 
         // Keep a reference to the Target Finder
         mTargetFinder = targetFinder;
@@ -171,7 +171,7 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
         // Reset target finder reference
         mTargetFinder = null;
 
-        Debug.LogError("Model Reco init error: " + initError.ToString());
+       // Debug.LogError("Model Reco init error: " + initError.ToString());
         ShowErrorMessageInUI(initError.ToString());
     }
 
@@ -180,7 +180,7 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
     /// </summary>
     public void OnUpdateError(TargetFinder.UpdateState updateError)
     {
-        Debug.LogError("Model Reco update error: " + updateError.ToString());
+      //  Debug.LogError("Model Reco update error: " + updateError.ToString());
         ShowErrorMessageInUI(updateError.ToString());
     }
 
@@ -207,7 +207,7 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
     /// <param name="searchResult"></param>
     public virtual void OnNewSearchResult(TargetFinder.TargetSearchResult searchResult)
     {
-        Debug.Log("ModelReco: new search result available: " + searchResult.TargetName);
+       // Debug.Log("ModelReco: new search result available: " + searchResult.TargetName);
 
         // Find or create the referenced model target
         GameObject modelTargetGameObj = null;
@@ -226,7 +226,7 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
 
         if (!modelTargetGameObj)
         {
-            Debug.LogError("Could not create a Model Target.");
+          //  Debug.LogError("Could not create a Model Target.");
             return;
         }
 
@@ -370,14 +370,14 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
             }
             else
             {
-                Debug.LogError("Could not reset TargetFinder");
+              //  Debug.LogError("Could not reset TargetFinder");
             }
 
             objectTracker.Start();
         }
         else
         {
-            Debug.LogError("Could not reset ObjectTracker");
+           // Debug.LogError("Could not reset ObjectTracker");
         }
     }
 

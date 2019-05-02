@@ -163,7 +163,7 @@ public class DefaultInitializationErrorHandler : VuforiaMonoBehaviour
         // Remove rich text tags for console logging
         var errorTextConsole = mErrorText.Replace("<color=red>", "").Replace("</color>", "");
 
-        Debug.LogError("Vuforia Engine initialization failed: " + errorCode + "\n\n" + errorTextConsole);
+       // Debug.LogError("Vuforia Engine initialization failed: " + errorCode + "\n\n" + errorTextConsole);
     }
 
     void SetErrorOccurred(bool errorOccurred)

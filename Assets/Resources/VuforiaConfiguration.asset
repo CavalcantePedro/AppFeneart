@@ -17,7 +17,7 @@ MonoBehaviour:
     ufoLicenseKey: QWZpWHFjNy8vLy8vQUFBQUtLTEpWbDc0TjA5SG5uNzY4TzdueHlNUWMrams1cXRSdlgyKzZ1YUx0ZVhsWmV2ZG9IK051K0NOVHBJSGZNb2FibW0yamV4aWpwZ0RtZlJZRTVVSmhtZC8rbHNpcEtocGxYcnpXRkFKaGx1MXlBOFFVVmJaUHBBNzVmSGpHWHdudmRseVd0NXRWWloyZUo3TE9tNlVLem1yT0k5bEFPeXRqQ2VzZXZPWk5qOCtPL1NnUGZEc2hqVVN6enJnY0w0dGJQc0VVSXpKa2ZPTzc0eEk5VWlGVGlWZkRxcDl5cW9vK1JpallkREF4VzFLcE5taGljRXVZR2VVVmw0dU5HaVdYMFg0UzQ5QjhOYjhISUVoaFd3d3MrZFkxT2U1OENycGFPekVPeXVUTnVPVEk5Z1BXVE9JSTcvYmN1VENrYm05b2VBQXhBZ1RDaUNEUEh0cTd0OENkUkNQQTNoWGxOK3ExbzgvVFl1K05ycUw=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 5
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: "Microsoft\xAE LifeCam VX-2000"
     flipHorizontally: 0
     turnOffWebCam: 0
     renderTextureLayer: 30

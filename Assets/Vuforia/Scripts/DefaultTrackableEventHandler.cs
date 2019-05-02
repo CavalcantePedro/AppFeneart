@@ -7,6 +7,7 @@ Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 using UnityEngine;
+using UnityEngine.UI;
 using Vuforia;
 
 /// <summary>
@@ -27,11 +28,19 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     #region UNITY_MONOBEHAVIOUR_METHODS
 
+   
+
     protected virtual void Start()
-    {
+    {   
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
+    }
+
+    void Update()
+    {
+        print(PlayerPrefs.GetInt("Placar"));
+        Cont();
     }
 
     protected virtual void OnDestroy()
@@ -59,13 +68,18 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             newStatus == TrackableBehaviour.Status.TRACKED ||
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
-            Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+
+            //Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+            
+         
+            
             OnTrackingFound();
         }
         else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
                  newStatus == TrackableBehaviour.Status.NO_POSE)
         {
-            Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+           // Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+
             OnTrackingLost();
         }
         else
@@ -80,6 +94,32 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     #endregion // PUBLIC_METHODS
 
     #region PROTECTED_METHODS
+
+   
+
+    public void Cont ()
+    {
+        
+        print("to catucaaaando abestado");
+        switch (PlayerPrefs.GetInt("Placar"))
+        {
+            case 1:
+            Singleton.GetInstance.placar.text = "1/4";
+            break;
+
+            case 2:
+            Singleton.GetInstance.placar.text = "2/4";
+            break;
+
+            case 3:
+            Singleton.GetInstance.placar.text = "3/4";
+            break;
+
+            case 4:
+            Singleton.GetInstance.placar.text = "4/4";
+            break;
+        }
+    }
 
     protected virtual void OnTrackingFound()
     {
