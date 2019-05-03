@@ -4,8 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Transitions - Fade.unity
-    guid: f0b6881c19bdfd845bb5a8b90db672c7
+  m_Scenes: []
   m_configObjects: {}
