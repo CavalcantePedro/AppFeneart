@@ -1,20 +1,23 @@
 fileFormatVersion: 2
-guid: 3882faff5796dc047b6049042c577b49
+guid: 317edbbf9b56e6d4c903980a564bbd88
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cubo
+    100004: "Hemisf\xE9rica"
+    100006: Sol
     400000: //RootNode
+    400002: Cubo
+    400004: "Hemisf\xE9rica"
+    400006: Sol
     2100000: Materiais.007
-    2300000: //RootNode
-    3300000: //RootNode
+    2300000: Cubo
+    3300000: Cubo
     4300000: Cubo
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Materiais.007
-    second: {fileID: 2100000, guid: d77e497b97be7c4439044a459220c1db, type: 2}
+    10800000: "Hemisf\xE9rica"
+    10800002: Sol
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
