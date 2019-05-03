@@ -13,12 +13,12 @@ public class SceneChanger : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().name == "Splash")
         {
-         StartCoroutine("Splash");
+            StartCoroutine("Splash");
         }
 
         else
         {
-         delay = 1f;
+            delay = 0.5f;
         }
     }
 
