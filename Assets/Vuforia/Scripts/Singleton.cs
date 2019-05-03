@@ -9,6 +9,12 @@ public class Singleton : MonoBehaviour
 
      public Text placar;
 
+     public ShowAndHideBar showAndHideBar;
+
+     public PinManager pinManager;
+
+     public Sprite normalMapSymbol;
+
     public Sprite favoritedMapSymbol;
 
     public Pin[] pins;

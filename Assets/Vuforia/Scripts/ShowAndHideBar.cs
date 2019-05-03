@@ -5,24 +5,24 @@ using UnityEngine;
 public class ShowAndHideBar : MonoBehaviour
 {
     [SerializeField]private Animator anim;
-    private bool hide;
+    public bool hidden;
     void Start()
     {
-        hide = true;
+        hidden = false;
     }
 
      public void ToggleAnim()
     {
-        if(hide)
+        if(hidden)
         {
-            anim.SetTrigger("hide");
-            hide = false;
+            anim.SetTrigger("show");
+            hidden = false;
         }
 
         else 
         {
-            anim.SetTrigger("show");
-            hide = true;
+            anim.SetTrigger("hide");
+            hidden = true;
         }
     }
 }
