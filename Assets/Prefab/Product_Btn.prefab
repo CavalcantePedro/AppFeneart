@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 1637469930417415922}
   - component: {fileID: 1637469930417415923}
   - component: {fileID: 1637469930417415820}
-  - component: {fileID: 758578249}
+  - component: {fileID: 4597775532177954885}
   m_Layer: 5
   m_Name: Product_Btn
   m_TagString: Product
@@ -433,7 +433,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &758578249
+--- !u!114 &4597775532177954885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -442,10 +442,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1637469930417415822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b17b53dbb552494dbe4e08282641d2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 617f6fe9b9d0f4e46a74d9571478578b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameTxt: {fileID: 1637469930162533260}
+  name: {fileID: 1637469930162533260}
   price: {fileID: 1637469930133703413}
-  name: 
-  id: 0
