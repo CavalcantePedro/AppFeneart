@@ -11,6 +11,7 @@ public class ScrollableList : MonoBehaviour
     [SerializeField] private List<GameObject> products;
     [SerializeField] private List<GameObject> userList; //List for operations
 
+    private string previousSearch;
     RectTransform rowRectTransform;
     RectTransform containerRectTransform;
 
@@ -98,21 +99,20 @@ public class ScrollableList : MonoBehaviour
             Destroy(list[i].gameObject);
         }
         list.Clear();
-
-        print(list + " Clear");
     }
 
     public void Filter(){
-        
-        print("Enter Filter");
 
         List<GameObject> filterList = new List<GameObject>();
+
+        if(searchInput.text == previousSearch)
+            return;
+
+        previousSearch = searchInput.text;
 
         for(int i = 0; i < userList.Count; i++){
 
             string pdName = userList[i].GetComponent<ProductCode>().Name;
-
-            print(searchInput.text.ToLower() + "&" + pdName.ToLower());
 
             if(pdName.ToLower().Contains(searchInput.text.ToLower())){
                 filterList.Add(userList[i]);
