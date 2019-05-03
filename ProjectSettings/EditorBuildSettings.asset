@@ -5,15 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Scenes/Ar.unity
-    guid: 8a6037092d438f944b1520f6c982a68f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Transitions - Fade.unity
     guid: f0b6881c19bdfd845bb5a8b90db672c7
-=======
-    path: Assets/Scenes/Search.unity
-    guid: 8e19684cec70a5d40b2bb87abe182f38
->>>>>>> origin/SearchList
   m_configObjects: {}
