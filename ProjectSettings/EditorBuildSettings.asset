@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Transitions - Fade.unity
-    guid: f0b6881c19bdfd845bb5a8b90db672c7
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Splash.unity
+    guid: abb7b0b0d667f3249b7c8df8648ad633
+  - enabled: 1
+    path: Assets/Scenes/Home.unity
+    guid: 3dd021dad7b41434ea4bed02bef2099c
   m_configObjects: {}
