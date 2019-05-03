@@ -11,12 +11,14 @@ public class Pin : MonoBehaviour
    public string ID;
    public PinManager test;
    private Image mapSymbolImg;
-   [SerializeField] private Sprite mapSymbol;
+   private Sprite mapSymbol;
+   private bool isFavorite;
 
 void Start()
 {
     mapSymbolImg = gameObject.GetComponent<Image>();
 
+    mapSymbol = Singleton.GetInstance.normalMapSymbol;
     if(PlayerPrefs.HasKey(ID))
     {
      mapSymbolImg.sprite = Singleton.GetInstance.favoritedMapSymbol;
@@ -35,7 +37,19 @@ public void SendInformation()
 
 public void Favorite()
 {
+  if(!isFavorite)
+  {  
   mapSymbolImg.sprite = Singleton.GetInstance.favoritedMapSymbol;
+  isFavorite = true;
+  PlayerPrefs.SetInt(ID , 1);
+  }
+  else
+  {
+    mapSymbolImg.sprite = mapSymbol;  
+    isFavorite = false;
+    PlayerPrefs.DeleteKey(ID);
+  }
+
 }
 
 

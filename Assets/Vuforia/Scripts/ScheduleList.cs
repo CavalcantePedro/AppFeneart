@@ -1,12 +1,11 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
+using UnityEngine;
 
-public class ScrollableList : MonoBehaviour
-{   
+public class ScheduleList : MonoBehaviour
+{
+
     [SerializeField] private int itemCount;
-    [SerializeField] private Text searchInput;
     [SerializeField] private GameObject notFoundTxt;
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private List<GameObject> products;
@@ -21,11 +20,6 @@ public class ScrollableList : MonoBehaviour
         rowRectTransform = itemPrefab.GetComponent<RectTransform>();
         containerRectTransform = GetComponent<RectTransform>();
 
-        /*float scrollHeight = ((200 + 10) * itemCount)/2; // (height + spacing) * itemCount;
-
-        containerRectTransform.offsetMin = new Vector2(containerRectTransform.offsetMin.x, -scrollHeight);
-        containerRectTransform.offsetMax = new Vector2(containerRectTransform.offsetMax.x, scrollHeight + 200);
-        */
         AdjustContentView(itemCount);
         ResetContentView();
 
@@ -57,21 +51,12 @@ public class ScrollableList : MonoBehaviour
             if(pc == null) print("ERRO, nullComponent! in ScrollableList");
 
             //Temp code (Random Test)
-            switch(Random.Range(1, 6)){
+            switch(Random.Range(1, 4)){
                 case 1:
-                    pc.SetData("Chaveiro", 1);
+                    pc.SetData("PREFEITURA", 1);
                 break;
                 case 2:
-                    pc.SetData("Escultura de Barro", 2);
-                break;
-                case 3:
-                    pc.SetData("Esculturas Indígenas", 43);
-                break;
-                case 4:
-                    pc.SetData("Quadros", 12);
-                break;
-                case 5:
-                    pc.SetData("Pulseiras", 2);
+                    pc.SetData("PARQUE", 2);
                 break;
             }
 
@@ -118,31 +103,5 @@ public class ScrollableList : MonoBehaviour
 
     public void Filter(){
 
-        notFoundTxt.SetActive(false);
-
-        List<GameObject> filterList = new List<GameObject>();
-
-        if(searchInput.text == previousSearch){
-            return;
-        }
-
-        previousSearch = searchInput.text;
-
-        for(int i = 0; i < userList.Count; i++){
-
-            string pdName = userList[i].GetComponent<ProductCode>().Name;
-
-            if(pdName.ToLower().Contains(searchInput.text.ToLower())){
-                filterList.Add(userList[i]);
-            }
-        }
-
-        if(filterList.Count <= 0) notFoundTxt.SetActive(true);
-
-        HideList(userList);
-        DrawList(filterList);
-
-        AdjustContentView(filterList.Count);
-        ResetContentView();
     }
 }

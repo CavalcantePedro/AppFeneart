@@ -34,6 +34,12 @@ public class PinManager : MonoBehaviour
         name.text = pinName;
         description.text = pinDescription;
         curID = ID;
+
+        if(Singleton.GetInstance.showAndHideBar.hidden)
+        {
+            Singleton.GetInstance.showAndHideBar.ToggleAnim();
+        }
+        
         if(previousID != ID)
         {
             previousID = ID;
