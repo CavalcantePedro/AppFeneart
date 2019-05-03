@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 752ebc722feb73b4ba5ddd8c0d3dac32, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -135,7 +135,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "Satan\xE1s"
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -152,7 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2f406e7dc18df4fb9a8b6955739cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Rapadura
-  description: "aqui nois vende rapadura rap\xE1"
-  icon: {fileID: 21300000, guid: b70e4b8006d6e4e4ea35e037b5cfb19c, type: 3}
+  name: Casa do Cuscuz
+  description: "O Cuscuz mais gostoso de todo o Nordeste! Voc\xEA Consegue resistir?"
+  icon: {fileID: 21300000, guid: c44b622fdec233f46b20914f0d136096, type: 3}
+  ID: 01
   test: {fileID: 0}

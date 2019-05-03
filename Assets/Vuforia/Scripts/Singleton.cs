@@ -17,6 +17,12 @@ public class Singleton : MonoBehaviour
 
     public Sprite favoritedMapSymbol;
 
+    public Image favoriteBtnImg;
+
+    public Sprite favoritedSprite;
+
+    public Sprite notFavoritedSprite;
+
     public Pin[] pins;
 
     public static Singleton GetInstance{

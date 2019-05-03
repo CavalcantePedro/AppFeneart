@@ -42,6 +42,7 @@ public void Favorite()
   mapSymbolImg.sprite = Singleton.GetInstance.favoritedMapSymbol;
   isFavorite = true;
   PlayerPrefs.SetInt(ID , 1);
+  
   }
   else
   {

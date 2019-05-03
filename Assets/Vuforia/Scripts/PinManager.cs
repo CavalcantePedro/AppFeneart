@@ -20,6 +20,7 @@ public class PinManager : MonoBehaviour
     void Start()
     {
         changeBox = false;
+        StartCoroutine(FavoritedCheck());
     }
 
     // Update is called once per frame
@@ -34,6 +35,7 @@ public class PinManager : MonoBehaviour
         name.text = pinName;
         description.text = pinDescription;
         curID = ID;
+        
 
         if(Singleton.GetInstance.showAndHideBar.hidden)
         {
@@ -75,14 +77,35 @@ public class PinManager : MonoBehaviour
     }
 
      public void CheckWichOneToFav()
-    {
+    {         
+
         for(int i = 0; i < Singleton.GetInstance.pins.Length ; i++)
         {
             if(Singleton.GetInstance.pins[i].ID == curID)
             {
                 Singleton.GetInstance.pins[i].Favorite();
+                
                 break;
             }
+        }
+    }
+
+    IEnumerator FavoritedCheck()
+    {
+        for(;;)
+        {
+            if(PlayerPrefs.HasKey(curID))
+            {   
+               
+                Singleton.GetInstance.favoriteBtnImg.sprite = Singleton.GetInstance.favoritedSprite;
+            }
+
+            else
+            {
+                Singleton.GetInstance.favoriteBtnImg.sprite = Singleton.GetInstance.notFavoritedSprite;
+            }
+            
+            yield return new WaitForSeconds(0.1f);
         }
     }
 
