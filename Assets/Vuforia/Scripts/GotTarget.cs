@@ -13,7 +13,7 @@ public class GotTarget : MonoBehaviour
     {   
          PlayerPrefs.SetInt("Canga" , 0);
         PlayerPrefs.SetInt("Canga2" , 0);
-        PlayerPrefs.SetInt("Fissura" , 0);
+        PlayerPrefs.SetInt("Cantil" , 0);
         PlayerPrefs.SetInt("Oxigenio" , 0);
         PlayerPrefs.SetInt("Placar" , 0);
         contador = PlayerPrefs.GetInt("Placar",0);
