@@ -9,6 +9,7 @@ public class PinManager : MonoBehaviour
     [SerializeField] private Text name;
     [SerializeField] private Text description;
     private string previousID;
+    public string curID;
     private bool changeBox;
 
     [SerializeField] private GameObject navBtns;
@@ -32,7 +33,7 @@ public class PinManager : MonoBehaviour
         icon.sprite = pinIcon;
         name.text = pinName;
         description.text = pinDescription;
-        
+        curID = ID;
         if(previousID != ID)
         {
             previousID = ID;
@@ -66,4 +67,20 @@ public class PinManager : MonoBehaviour
             pinInfoBox.SetActive(false);
         }
     }
+
+     public void CheckWichOneToFav()
+    {
+        for(int i = 0; i < Singleton.GetInstance.pins.Length ; i++)
+        {
+            if(Singleton.GetInstance.pins[i].ID == curID)
+            {
+                Singleton.GetInstance.pins[i].Favorite();
+                break;
+            }
+        }
+    }
+
+    
+
+
 }

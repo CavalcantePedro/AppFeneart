@@ -9,6 +9,10 @@ public class Singleton : MonoBehaviour
 
      public Text placar;
 
+    public Sprite favoritedMapSymbol;
+
+    public Pin[] pins;
+
     public static Singleton GetInstance{
         get{
             if(instance == null){
