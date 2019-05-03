@@ -11,7 +11,15 @@ public class SceneChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     delay = 1f;
+        if(SceneManager.GetActiveScene().name == "Splash")
+        {
+         StartCoroutine("Splash");
+        }
+
+        else
+        {
+         delay = 1f;
+        }
     }
 
    public void ChangeScene(string name)
@@ -25,6 +33,15 @@ public class SceneChanger : MonoBehaviour
        anim.SetTrigger("changingScene");
        yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(sceneName);   
+
+   }
+
+   IEnumerator Splash()
+   {
+       yield return new WaitForSeconds(2f);
+       anim.SetTrigger("changingScene");
+       yield return new WaitForSeconds(delay);
+       SceneManager.LoadScene("Home");   
 
    }
 
