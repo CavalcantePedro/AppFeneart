@@ -35,7 +35,7 @@ public class SceneChanger : MonoBehaviour
     {
         if(canBackHome)
         {
-            if(Input.GetButtonDown("Esc"))
+            if(Input.GetKeyDown(KeyCode.Escape))
             {
                 sceneName =  "Home";
                 StartCoroutine(Transition());

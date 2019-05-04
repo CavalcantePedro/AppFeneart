@@ -1,5 +1,5 @@
 ﻿/*==============================================================================
-Copyright (c) 2017-2018 PTC Inc. All Rights Reserved.
+Copyright (c) 2019 PTC Inc. All Rights Reserved.
 
 Confidential and Proprietary - Protected under copyright and other laws.
 
@@ -39,18 +39,6 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
 
     #region PUBLIC_VARIABLES
 
-    /// <summary>
-    /// The Model Target used as template when a Model is recognized.
-    /// </summary>
-    [Tooltip("The Model Target used as Template when a model is recognized.")]
-    public ModelTargetBehaviour ModelTargetTemplate;
-
-    /// <summary>
-    /// Whether the model should be augmented with a bounding box.
-    /// Only applicable to Template model targets.
-    /// </summary>
-    [Tooltip("Whether the model should be augmented with a bounding box.")]
-    public bool ShowBoundingBox;
 
     /// <summary>
     /// Can be set in the Unity inspector to display error messages in UI.
@@ -103,7 +91,7 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
         if (!VuforiaARController.Instance.HasStarted)
             return;
 
-        if (mTargetFinder == null)
+        if (mTargetFinder == null || mLastRecoModelTarget == null)
             return;
 
         
@@ -157,7 +145,7 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
     /// </summary>
     public void OnInitialized(TargetFinder targetFinder)
     {
-       // Debug.Log("ModelReco initialized.");
+        Debug.Log("ModelReco initialized.");
 
         // Keep a reference to the Target Finder
         mTargetFinder = targetFinder;
@@ -171,7 +159,7 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
         // Reset target finder reference
         mTargetFinder = null;
 
-       // Debug.LogError("Model Reco init error: " + initError.ToString());
+        Debug.LogError("Model Reco init error: " + initError.ToString());
         ShowErrorMessageInUI(initError.ToString());
     }
 
@@ -180,7 +168,7 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
     /// </summary>
     public void OnUpdateError(TargetFinder.UpdateState updateError)
     {
-      //  Debug.LogError("Model Reco update error: " + updateError.ToString());
+        Debug.LogError("Model Reco update error: " + updateError.ToString());
         ShowErrorMessageInUI(updateError.ToString());
     }
 
@@ -207,27 +195,19 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
     /// <param name="searchResult"></param>
     public virtual void OnNewSearchResult(TargetFinder.TargetSearchResult searchResult)
     {
-       // Debug.Log("ModelReco: new search result available: " + searchResult.TargetName);
+        Debug.Log("ModelReco: new search result available: " + searchResult.TargetName);
 
         // Find or create the referenced model target
         GameObject modelTargetGameObj = null;
-        bool builtFromTemplate = false;
         var existingModelTarget = FindExistingModelTarget((TargetFinder.ModelRecoSearchResult)searchResult);
         if (existingModelTarget)
         {
             modelTargetGameObj = existingModelTarget.gameObject;
-            builtFromTemplate = false;
-        }
-        else if (ModelTargetTemplate)
-        {
-            modelTargetGameObj = Instantiate(ModelTargetTemplate.gameObject);
-            builtFromTemplate = true;
         }
 
         if (!modelTargetGameObj)
         {
-          //  Debug.LogError("Could not create a Model Target.");
-            return;
+            modelTargetGameObj = new GameObject("ModelTarget_" + searchResult.TargetName);
         }
 
         // Enable the new search result as a Model Target
@@ -238,16 +218,6 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
         {
             mLastRecoModelTarget = mtb;
 
-            // If the model target was created from a template,
-            // we augment it with a bounding box game object
-            if (builtFromTemplate && ShowBoundingBox)
-            {
-                var modelBoundingBox = mtb.ModelTarget.GetBoundingBox();
-                var bboxGameObj = CreateBoundingBox(mtb.ModelTarget.Name, modelBoundingBox);
-
-                // Parent the bounding box under the model target.
-                bboxGameObj.transform.SetParent(modelTargetGameObj.transform, false);
-            }
 
             if (StopSearchWhenModelFound)
             {
@@ -265,13 +235,12 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
 
     private ModelTargetBehaviour FindExistingModelTarget(TargetFinder.ModelRecoSearchResult searchResult)
     {
-        var modelTargetsInScene = Resources.FindObjectsOfTypeAll<ModelTargetBehaviour>().ToList().Where(mt => mt.ModelTargetType == ModelTargetType.PREDEFINED).ToArray();
+        var modelTargetsInScene = Resources.FindObjectsOfTypeAll<ModelTargetBehaviour>();
 
-        if (modelTargetsInScene == null || modelTargetsInScene.Length == 0)
+        if (modelTargetsInScene.Length == 0)
             return null;
 
         string targetName = searchResult.TargetName;
-        //string targetUniqueId = searchResult.UniqueTargetId;
 
         foreach (var mt in modelTargetsInScene)
         {
@@ -285,16 +254,6 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
         return null;
     }
 
-
-    private GameObject CreateBoundingBox(string modelTargetName, OrientedBoundingBox3D bbox)
-    {
-        var bboxGameObj = new GameObject(modelTargetName + "_BoundingBox");
-        bboxGameObj.transform.localPosition = bbox.Center;
-        bboxGameObj.transform.localRotation = Quaternion.identity;
-        bboxGameObj.transform.localScale = 2 * bbox.HalfExtents;
-        bboxGameObj.AddComponent<BoundingBoxRenderer>();
-        return bboxGameObj;
-    }
 
     private void ShowErrorMessageInUI(string text)
     {
@@ -370,14 +329,14 @@ public class DefaultModelRecoEventHandler : MonoBehaviour, IObjectRecoEventHandl
             }
             else
             {
-              //  Debug.LogError("Could not reset TargetFinder");
+                Debug.LogError("Could not reset TargetFinder");
             }
 
             objectTracker.Start();
         }
         else
         {
-           // Debug.LogError("Could not reset ObjectTracker");
+            Debug.LogError("Could not reset ObjectTracker");
         }
     }
 
