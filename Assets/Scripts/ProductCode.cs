@@ -23,6 +23,6 @@ public class ProductCode : MonoBehaviour
         Name = name;
         Id = id;
 
-        //OnEnable();
+        OnEnable();
     }
 }
