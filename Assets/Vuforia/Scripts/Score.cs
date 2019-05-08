@@ -24,7 +24,7 @@ public class Score : MonoBehaviour
     void Start()
     {   
         winAlrealdyRun = false;
-        PlayerPrefs.SetInt("Placar" , 0);
+        
         if(PlayerPrefs.GetInt("Placar") < 4)
         {
             canguaceiroInicial.SetActive(true);
@@ -40,6 +40,7 @@ public class Score : MonoBehaviour
 
 	public void FinishReading()
 	{
+        print("fechei");
 		if (PlayerPrefs.GetInt("Placar") < 4)
 		{
 			canguaceiroInicial.SetActive(false);

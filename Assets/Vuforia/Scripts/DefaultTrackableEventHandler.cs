@@ -39,8 +39,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     void Update()
     {
-        print(PlayerPrefs.GetInt("Placar"));
-        Cont();
+        /* print(PlayerPrefs.GetInt("Placar"));
+        Cont();*/
     }
 
     protected virtual void OnDestroy()
@@ -97,7 +97,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
    
 
-    public void Cont ()
+    /*/public void Cont ()
     {
         
         print("to catucaaaando abestado");
@@ -118,8 +118,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             case 4:
             Singleton.GetInstance.placar.text = "4/4";
             break;
-        }
     }
+        }*/
 
     protected virtual void OnTrackingFound()
     {

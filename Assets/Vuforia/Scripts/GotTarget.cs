@@ -11,11 +11,11 @@ public class GotTarget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        /*  PlayerPrefs.SetInt("Canga" , 0);
+        PlayerPrefs.SetInt("Canga" , 0);
         PlayerPrefs.SetInt("Canga2" , 0);
         PlayerPrefs.SetInt("Cantil" , 0);
         PlayerPrefs.SetInt("Bolsa" , 0);
-        PlayerPrefs.SetInt("Placar" , 0);*/
+        PlayerPrefs.SetInt("Placar" , 0);
         contador = PlayerPrefs.GetInt("Placar",0);
         mesh = gameObject.GetComponent<MeshRenderer>();
         StartCoroutine("CheckingTarget");
