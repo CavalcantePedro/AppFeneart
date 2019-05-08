@@ -9,6 +9,10 @@ public class Map : MonoBehaviour
     [SerializeField] private Vector2 maxPos;
     [SerializeField] private float minZoom;
     [SerializeField] private float maxZoom;
+
+    //pan
+    private Vector3 touchStart;
+    private Vector3 direction;
     void Start()
     {
     
@@ -18,6 +22,9 @@ public class Map : MonoBehaviour
     void Update()
     {
         ClampingPos();
+        Pan();
+        GetZoomRate();
+
     }
 
     public void ClampingPos()
@@ -26,9 +33,9 @@ public class Map : MonoBehaviour
        
     }
 
-    /* public void Zoom()
+     public void GetZoomRate()
     {
-        if(Input.touchCount == 2)
+       if(Input.touchCount == 2)
         {
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
@@ -40,7 +47,30 @@ public class Map : MonoBehaviour
             float prevMagnitude = (touchZeroPrevPos - touchOnePrevPos).magnitude;
             float currentMagnitude = (touchZero.position - touchOne.position).magnitude;
 
-            float difference = currentMagnitude - prevMagnitude;  
+            float difference = currentMagnitude - prevMagnitude;
+
+            Zoom(difference);
         }
-    } */
+    }
+    
+    void Zoom(float increment)
+    {
+        
+        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, minZoom , maxZoom);
+    }
+
+    void Pan() 
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            touchStart =  Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        }
+        if(Input.GetMouseButton(0))
+        {
+            direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Camera.main.transform.position += direction;
+        }
+
+    }
 }
