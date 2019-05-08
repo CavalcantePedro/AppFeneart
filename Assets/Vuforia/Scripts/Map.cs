@@ -49,7 +49,7 @@ public class Map : MonoBehaviour
 
             float difference = currentMagnitude - prevMagnitude;
 
-            Zoom(difference * 0.01);
+            Zoom(difference * 0.01f);
         }
     }
     
