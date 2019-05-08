@@ -2861,6 +2861,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 35ef0644befddfa41ae3c19d6d4960fb,
         type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Casa do Cuscuz
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: Meu cabra, aqui tem o melhor cuscuz de todo o Nordeste! Venha provar!
+      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -3164,7 +3179,7 @@ PrefabInstance:
     - target: {fileID: 6222486434641431972, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_Name
-      value: Pin - Mestre Vitalino
+      value: Pin - Menino Bibizinho
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -3279,12 +3294,12 @@ PrefabInstance:
     - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: name
-      value: Bibizarro
+      value: Rabih Tabatchnik
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: description
-      value: "Artes ast\xEDsticas e incr\xEDveis do art\xEDsta Nordestino: Bibizarro"
+      value: "Um programador esplendido! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/rabih-tabatchnik-2447a4186/"
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -3292,6 +3307,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
         type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 02
+      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target

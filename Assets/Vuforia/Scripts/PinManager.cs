@@ -109,6 +109,16 @@ public class PinManager : MonoBehaviour
         }
     }
 
+    public void ClosePinInfo()
+    {
+        if(!navBtns.activeSelf)
+        {
+            navBtns.SetActive(true);
+            pinInfoBox.SetActive(false);
+
+        }
+    }
+
     
 
 
