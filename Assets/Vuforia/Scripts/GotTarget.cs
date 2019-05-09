@@ -11,11 +11,7 @@ public class GotTarget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        PlayerPrefs.SetInt("Canga" , 0);
-        PlayerPrefs.SetInt("Canga2" , 0);
-        PlayerPrefs.SetInt("Cantil" , 0);
-        PlayerPrefs.SetInt("Bolsa" , 0);
-        PlayerPrefs.SetInt("Placar" , 0);
+        //ResetDebug();
         contador = PlayerPrefs.GetInt("Placar",0);
         mesh = gameObject.GetComponent<MeshRenderer>();
         StartCoroutine("CheckingTarget");
@@ -45,5 +41,14 @@ public class GotTarget : MonoBehaviour
             }
         yield return new WaitForSeconds(0.5f);
         }
+    }
+
+    void ResetDebug()
+    {
+         PlayerPrefs.SetInt("Canga" , 0);
+        PlayerPrefs.SetInt("Canga2" , 0);
+        PlayerPrefs.SetInt("Cantil" , 0);
+        PlayerPrefs.SetInt("Bolsa" , 0);
+        PlayerPrefs.SetInt("Placar" , 0);
     }
 }
