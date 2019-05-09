@@ -79,8 +79,6 @@ public class ScrollableList : MonoBehaviour
             list[i].SetActive(true);
             list[i].name = gameObject.name + " Product (" + i + ")";
         }
-
-        print("Drawed List");
     }
 
     void HideList(List<GameObject> list){
@@ -110,7 +108,7 @@ public class ScrollableList : MonoBehaviour
 
         for(int i = 0; i < userList.Count; i++){
 
-            string pdName = userList[i].GetComponent<ProductCode>().Name;
+            string pdName = userList[i].GetComponent<ProductCode>().name;
 
             if(pdName.ToLower().Contains(searchInput.text.ToLower())){
                 filterList.Add(userList[i]);

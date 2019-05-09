@@ -7,7 +7,7 @@ using System.IO;
 public class WebManager : MonoBehaviour
 {
 
-    [SerializeField] private string SITE_LINK;
+    public static string SITE_LINK;
 
     public static string jsonString;
     private static string streamingPath;
@@ -29,7 +29,7 @@ public class WebManager : MonoBehaviour
         StartCoroutine(GetText());
     }
 
-    public static void SaveData(){
+    public static void WebSaveData(){
 
         string directoryPath = streamingPath + @"/FeneartSave";
 
@@ -52,7 +52,7 @@ public class WebManager : MonoBehaviour
         }
     }
 
-    public static string LoadData(){
+    public static string WebLoadData(){
 
         string path = streamingPath + @"/FeneartSave/feneart2019.txt";
 
@@ -83,6 +83,6 @@ public class WebManager : MonoBehaviour
             byte[] results = www.downloadHandler.data;
         }
 
-        LoadData();
+        WebLoadData();
     }
 }

@@ -634,7 +634,7 @@ GameObject:
   - component: {fileID: 601364680}
   - component: {fileID: 601364679}
   m_Layer: 0
-  m_Name: WebData
+  m_Name: DataManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -652,7 +652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b0b7dcdf257d84dbc522dbb696028e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SITE_LINK: https://raw.githubusercontent.com/Mateus820/FeneartJson/master/FeneartJson.json
 --- !u!4 &601364680
 Transform:
   m_ObjectHideFlags: 0
@@ -665,7 +664,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &716896141
 GameObject:
@@ -1511,7 +1510,7 @@ Transform:
   m_LocalScale: {x: 1.6694716, y: 1.6694716, z: 1.6694716}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2074492671
 GameObject:

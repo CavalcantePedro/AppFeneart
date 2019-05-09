@@ -5,23 +5,20 @@ using UnityEngine.UI;
 
 public class ProductCode : MonoBehaviour
 {
-    [SerializeField] private Text name;
-    [SerializeField] private Text price; 
+    [SerializeField] private Text nameTxt;
+    [SerializeField] private Text priceTxt; 
 
-    public string Name;
-    //{ get; set;}
-    public int Id;
-    //{ get; set;}
+    public string name;
+    public int price;
     
     void OnEnable(){
-        name.text = Name;
-        price.text = "R$" + Id + ",99";
+        nameTxt.text = name;
+        priceTxt.text = "R$" + price + ",99";
     }
 
-    public void SetData(string name, int id){
-        print(name + id);
-        Name = name;
-        Id = id;
+    public void SetData(string name, int price){
+        this.name = name;
+        this.price = price;
 
         OnEnable();
     }
