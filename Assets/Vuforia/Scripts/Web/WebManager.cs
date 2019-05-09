@@ -18,7 +18,7 @@ public class WebManager : MonoBehaviour
         jsonString = "";
 
         #if UNITY_ANDROID
-            streamingPath = "jar:file://" + Application.dataPath + "!/assets/";
+            streamingPath = "jar:file://" + Application.dataPath + "!/assets";
         #endif
 
         #if UNITY_IOS
