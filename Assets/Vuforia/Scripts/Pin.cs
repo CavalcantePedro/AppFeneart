@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Pin : MonoBehaviour
 {
    public string name;
+   [TextArea(1,3)]
    public string description;
    public Sprite icon;
    public string ID;
