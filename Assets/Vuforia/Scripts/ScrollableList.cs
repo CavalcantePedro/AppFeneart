@@ -28,7 +28,6 @@ public class ScrollableList : Web
 
     public override void OnWebLoad() {
 
-        //txt.text = WebManager.WebLoadData();
         Itens it = JsonUtility.FromJson<Itens>(WebManager.WebLoadData());
 
         txt.text = it.products[0].name;
@@ -67,7 +66,7 @@ public class ScrollableList : Web
 
             Itens it = JsonUtility.FromJson<Itens>(WebManager.WebLoadData());
             //print(WebManager.WebLoadData());
-            pc.SetData(it.products[i].name, it.products[i].price);
+            pc.SetData(it.products[i].name, it.products[i].price, it.products[i].location);
             testList = it.products;
 
             tempList.Add(newItem);
@@ -126,6 +125,14 @@ public class ScrollableList : Web
             string pdName = userList[i].GetComponent<ProductCode>().name;
 
             if(pdName.ToLower().Contains(searchInput.text.ToLower())){
+                filterList.Add(userList[i]);
+            }
+        }
+
+        for (int i = 0; i < userList.Count; i++)
+        {
+            string pdLocation = userList[i].GetComponent<ProductCode>().location;
+            if(pdLocation.ToLower().Contains(searchInput.text.ToLower())){
                 filterList.Add(userList[i]);
             }
         }

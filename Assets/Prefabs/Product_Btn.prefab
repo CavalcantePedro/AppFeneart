@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1637469929123168636
 RectTransform:
   m_ObjectHideFlags: 0
@@ -447,5 +447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTxt: {fileID: 1637469930162533260}
   priceTxt: {fileID: 1637469930133703413}
+  locationTxt: {fileID: 1637469929730450836}
   name: 
   price: 0
+  location: 

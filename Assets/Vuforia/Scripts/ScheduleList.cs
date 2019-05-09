@@ -49,7 +49,7 @@ public class ScheduleList : MonoBehaviour
             ProductCode pc = newItem.GetComponent<ProductCode>();
 
             if(pc == null) print("ERRO, nullComponent! in ScrollableList");
-                pc.SetData("PREFEITURA", "1");
+                pc.SetData("PREFEITURA", "1", "Algum lugar");
 
             tempList.Add(newItem);
             
