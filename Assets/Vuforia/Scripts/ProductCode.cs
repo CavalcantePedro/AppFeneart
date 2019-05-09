@@ -23,7 +23,7 @@ public class ProductCode : MonoBehaviour
     void Start() 
     {
          selfBtn = gameObject.GetComponent<Button>();
-         selfBtn.onClick.AddListener(test);
+         selfBtn.onClick.AddListener(Redirect);
     }
 
     public void SetData(string name, int id){
@@ -34,9 +34,9 @@ public class ProductCode : MonoBehaviour
         OnEnable();
     }
 
-    void test()
+    void Redirect()
     {
-        Singleton.GetInstance.sceneChanger.ProductRedirect("<location>");
+        Singleton.GetInstance.sceneChanger.ProductRedirect("Rabih Tabatchnik");
     }
 
 }

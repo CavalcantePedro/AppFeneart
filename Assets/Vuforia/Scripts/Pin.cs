@@ -53,10 +53,22 @@ void Start()
         {               
             SendInformation();
             Singleton.GetInstance.pinManager.ToggleBoxes();
+            StartCoroutine(ZoomIntoPin());
             PlayerPrefs.DeleteKey("Redirected");
         }
     }
 
+}
+
+  IEnumerator ZoomIntoPin()
+{
+  yield return new WaitForSeconds(0.1f);
+  Camera.main.orthographicSize = 2.5f;
+  for(;;)
+  {
+  Camera.main.transform.position = Vector2.MoveTowards(Camera.main.transform.position , transform.position , 0.1f);  
+  yield return new WaitForSeconds(0.01f);
+  }
 }
 public void SendInformation()
 {
