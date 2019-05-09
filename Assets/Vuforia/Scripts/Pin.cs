@@ -10,16 +10,26 @@ public class Pin : MonoBehaviour
    public string description;
    public Sprite icon;
    public string ID;
-   public PinManager test;
    private Image mapSymbolImg;
    private Sprite mapSymbol;
    private bool isFavorite;
+
+   [SerializeField] private bool isInfo;
 
 void Start()
 {
     mapSymbolImg = gameObject.GetComponent<Image>();
 
+    if(!isInfo)
+    {
     mapSymbol = Singleton.GetInstance.normalMapSymbol;
+    }
+
+    else
+    {
+        mapSymbol = Singleton.GetInstance.infoSprite;
+    }
+
     if(PlayerPrefs.HasKey(ID))
     {
      mapSymbolImg.sprite = Singleton.GetInstance.favoritedMapSymbol;
@@ -27,13 +37,31 @@ void Start()
 
     else
     {
-     mapSymbolImg.sprite = mapSymbol;
+      if(!isInfo)
+      {
+        mapSymbolImg.sprite = mapSymbol;
+      }
+      else
+      {
+        mapSymbol = Singleton.GetInstance.infoSprite;
+      }
     }
+
+    if(PlayerPrefs.HasKey("Redirected"))
+    {
+        if(PlayerPrefs.GetString("Redirected") == name)
+        {               
+            SendInformation();
+            Singleton.GetInstance.pinManager.ToggleBoxes();
+            PlayerPrefs.DeleteKey("Redirected");
+        }
+    }
+
 }
 public void SendInformation()
 {
-    test.ShowInfo(icon, name , description,ID);
-    //Singleton.GetInstance.pinManager.ShowInfo(this.Pin);
+    
+    Singleton.GetInstance.pinManager.ShowInfo(icon, name , description,ID);
 }
 
 public void Favorite()

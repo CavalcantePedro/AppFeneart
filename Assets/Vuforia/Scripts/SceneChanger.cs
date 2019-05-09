@@ -55,7 +55,7 @@ public class SceneChanger : MonoBehaviour
    public void ChangeScene(string name)
    {
        sceneName = name;
-       StartCoroutine("Transition");
+       StartCoroutine(Transition());
    }
 
    IEnumerator Transition()
@@ -64,6 +64,13 @@ public class SceneChanger : MonoBehaviour
        yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(sceneName);   
 
+   }
+
+   public void ProductRedirect(string location)
+   {
+       PlayerPrefs.SetString("Redirected", location);
+       sceneName = "Home";
+       StartCoroutine(Transition());
    }
 
    IEnumerator Splash()

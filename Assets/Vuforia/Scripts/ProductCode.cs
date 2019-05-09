@@ -8,6 +8,8 @@ public class ProductCode : MonoBehaviour
     [SerializeField] private Text name;
     [SerializeField] private Text price; 
 
+    private Button selfBtn;
+
     public string Name;
     //{ get; set;}
     public int Id;
@@ -15,7 +17,13 @@ public class ProductCode : MonoBehaviour
     
     void OnEnable(){
         name.text = Name;
-        price.text = "R$" + Id + ",99";
+        price.text = "R$" + Id + ",99";       
+    }
+
+    void Start() 
+    {
+         selfBtn = gameObject.GetComponent<Button>();
+         selfBtn.onClick.AddListener(test);
     }
 
     public void SetData(string name, int id){
@@ -25,4 +33,10 @@ public class ProductCode : MonoBehaviour
 
         OnEnable();
     }
+
+    void test()
+    {
+        Singleton.GetInstance.sceneChanger.ProductRedirect("<location>");
+    }
+
 }
