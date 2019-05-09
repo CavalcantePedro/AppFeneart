@@ -10,10 +10,19 @@ public class ProductCode : MonoBehaviour
 
     public string name;
     public int price;
-    
+
+    private Button selfBtn;
+
     void OnEnable(){
         nameTxt.text = name;
         priceTxt.text = "R$" + price + ",99";
+    }
+    
+
+    void Start() 
+    {
+        selfBtn = gameObject.GetComponent<Button>();
+        selfBtn.onClick.AddListener(Redirect);
     }
 
     public void SetData(string name, int price){
@@ -22,4 +31,10 @@ public class ProductCode : MonoBehaviour
 
         OnEnable();
     }
+
+    void Redirect()
+    {
+        Singleton.GetInstance.sceneChanger.ProductRedirect("Rabih Tabatchnik");
+    }
+
 }

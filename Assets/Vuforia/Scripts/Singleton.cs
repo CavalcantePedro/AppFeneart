@@ -7,6 +7,8 @@ public class Singleton : MonoBehaviour
 {
     private static Singleton instance;
 
+    public SceneChanger sceneChanger;
+
      public Text placar;
 
      public ShowAndHideBar showAndHideBar;
@@ -20,6 +22,8 @@ public class Singleton : MonoBehaviour
     public Image favoriteBtnImg;
 
     public Sprite favoritedSprite;
+
+    public Sprite infoSprite;
 
     public Sprite notFavoritedSprite;
 

@@ -334,6 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c6c4fcc30f09143a43dbffce3b1330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneChanger: {fileID: 0}
   placar: {fileID: 0}
   showAndHideBar: {fileID: 2065557591}
   pinManager: {fileID: 1272634186}
@@ -341,6 +342,7 @@ MonoBehaviour:
   favoritedMapSymbol: {fileID: 21300000, guid: 09fd78942fd541048bcaada58c349742, type: 3}
   favoriteBtnImg: {fileID: 606443176}
   favoritedSprite: {fileID: 21300000, guid: 09fd78942fd541048bcaada58c349742, type: 3}
+  infoSprite: {fileID: 21300000, guid: 75359f53a2068aa4fae10efb16496125, type: 3}
   notFavoritedSprite: {fileID: 21300000, guid: a8ca43ae4f6f9a6488eac3a9ea5beba9, type: 3}
   pins:
   - {fileID: 2075498704}
@@ -356,6 +358,9 @@ MonoBehaviour:
   - {fileID: 2134844737}
   - {fileID: 2079385505}
   - {fileID: 1283693968}
+  - {fileID: 1431251371}
+  - {fileID: 500625477}
+  - {fileID: 1262838870}
 --- !u!4 &287809161
 Transform:
   m_ObjectHideFlags: 0
@@ -460,6 +465,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Romeu Cascalho
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Artes art\xEDsticas e incr\xEDveis em Cubismo Arredondado"
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -575,32 +606,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: Romeu Cascalho
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Artes art\xEDsticas e incr\xEDveis em Cubismo Arredondado"
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -718,6 +723,9 @@ RectTransform:
   - {fileID: 388329748}
   - {fileID: 2110076806}
   - {fileID: 1782657369}
+  - {fileID: 1431251370}
+  - {fileID: 500625476}
+  - {fileID: 1262838871}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -816,6 +824,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Lara Vasconcelos
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Bailarina da Anima\xE7\xE3o! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/lara-vasconcelos-b81840186/"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -932,32 +966,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: Lara Vasconcelos
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Bailarina da Anima\xE7\xE3o! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/lara-vasconcelos-b81840186/"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -987,6 +995,33 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: "L\xE1pis Perdido"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Foi aqui onde o Cangaceiro perdeu seu l\xE1pis! V\xE1 at\xE9 o cartaz,
+        clique em \"Jogo\" e mostre para ele."
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -1103,33 +1138,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: "L\xE1pis Perdido"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Foi aqui onde o Cangaceiro perdeu seu l\xE1pis! V\xE1 at\xE9 o cartaz,
-        clique em \"Jogo\" e mostre para ele."
-      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -1198,6 +1206,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Mateus Francisco
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Um amante de programa\xE7\xE3o! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/mateus-francisco-1b387a164/"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -1314,32 +1348,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: Mateus Francisco
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Um amante de programa\xE7\xE3o! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/mateus-francisco-1b387a164/"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -1445,6 +1453,205 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2f406e7dc18df4fb9a8b6955739cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &500625475
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 368497736}
+    m_Modifications:
+    - target: {fileID: 6222486434641431972, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Name
+      value: Pin -  Info2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431972, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 75359f53a2068aa4fae10efb16496125,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: "Informa\xE7\xF5es"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Aqui voc\xEA pode obter mais informa\xE7\xF5es sobre o evento."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: isInfo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -253
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 174
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431969, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 75359f53a2068aa4fae10efb16496125,
+        type: 3}
+    - target: {fileID: 6222486434641431969, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b9e62a15077709488ce1f898603b9d9, type: 3}
+--- !u!224 &500625476 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 500625475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &500625477 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 500625475}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2f406e7dc18df4fb9a8b6955739cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &536707739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,6 +1747,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Matheus Rodrigues
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Habilidades em 2D, 3D e miojo! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/matheus-rodrigues-540a1a170/"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -1655,32 +1888,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: Matheus Rodrigues
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Habilidades em 2D, 3D e miojo! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/matheus-rodrigues-540a1a170/"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -1926,6 +2133,32 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Marina Xavier
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Co-fundadora da \"Ox\xEA,Bora\"! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/marina-xavier-190604150/"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2041,32 +2274,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: Marina Xavier
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Co-fundadora da \"Ox\xEA,Bora\"! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/marina-xavier-190604150/"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -2160,6 +2367,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Pedro Cavalcante
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Suprassumo do Arduino! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/pedro-cavalcante-898242185/"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -2275,32 +2508,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: Pedro Cavalcante
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Suprassumo do Arduino! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/pedro-cavalcante-898242185/"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -3121,6 +3328,205 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1ed4ede97114b148af8b84d9f6f86fb, type: 3}
+--- !u!1001 &1262838869
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 368497736}
+    m_Modifications:
+    - target: {fileID: 6222486434641431972, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Name
+      value: Pin -  Info3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431972, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 75359f53a2068aa4fae10efb16496125,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: "Informa\xE7\xF5es"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Aqui voc\xEA pode obter mais informa\xE7\xF5es sobre o evento."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: isInfo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -762
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 472
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431969, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 75359f53a2068aa4fae10efb16496125,
+        type: 3}
+    - target: {fileID: 6222486434641431969, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b9e62a15077709488ce1f898603b9d9, type: 3}
+--- !u!114 &1262838870 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1262838869}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2f406e7dc18df4fb9a8b6955739cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &1262838871 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1262838869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1272634182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3358,6 +3764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1305802128}
   - component: {fileID: 1305802127}
+  - component: {fileID: 1305802129}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -3427,6 +3834,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1305802129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305802126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1272634186}
+          m_MethodName: ClosePinInfo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!224 &1338399895 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
@@ -3524,6 +3962,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2f406e7dc18df4fb9a8b6955739cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &1431251370 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1962126399}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1431251371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1962126399}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2f406e7dc18df4fb9a8b6955739cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1445978772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3540,6 +3996,33 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: "Chap\xE9u Perdido"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Foi aqui onde o Cangaceiro perdeu seu chap\xE9u! V\xE1 at\xE9 o cartaz,
+        clique em \"Jogo\" e mostre para ele."
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -3655,33 +4138,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: "Chap\xE9u Perdido"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Foi aqui onde o Cangaceiro perdeu seu chap\xE9u! V\xE1 at\xE9 o cartaz,
-        clique em \"Jogo\" e mostre para ele."
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -3892,6 +4348,33 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Lojinho do Erick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Bijuterias importadas da Alemanha Nordestina de alt\xEDssima qualidade
+        e baix\xEDssimo pre\xE7o!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d2b9eb754be6964f9ca294ff5e4096f,
+        type: 3}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4007,33 +4490,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: Lojinho do Erick
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Bijuterias importadas da Alemanha Nordestina de alt\xEDssima qualidade
-        e baix\xEDssimo pre\xE7o!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 7d2b9eb754be6964f9ca294ff5e4096f,
-        type: 3}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -4074,6 +4530,33 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Bolsa Perdida
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Foi aqui onde o Cangaceiro perdeu sua bolsa! V\xE1 at\xE9 o cartaz,
+        clique em \"Jogo\" e mostre para ele."
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -4190,33 +4673,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: Bolsa Perdida
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Foi aqui onde o Cangaceiro perdeu sua bolsa! V\xE1 at\xE9 o cartaz,
-        clique em \"Jogo\" e mostre para ele."
-      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -4325,6 +4781,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 35ef0644befddfa41ae3c19d6d4960fb,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Casa do Cuscuz
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: Meu cabra, aqui tem o melhor cuscuz de todo o Nordeste! Venha provar!
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -4441,6 +4923,30 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1272634186}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b9e62a15077709488ce1f898603b9d9, type: 3}
+--- !u!1001 &1962126399
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 368497736}
+    m_Modifications:
+    - target: {fileID: 6222486434641431972, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Name
+      value: Pin -  Info
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431972, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: test
@@ -4450,28 +4956,159 @@ PrefabInstance:
         type: 3}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: 35ef0644befddfa41ae3c19d6d4960fb,
+      objectReference: {fileID: 21300000, guid: 75359f53a2068aa4fae10efb16496125,
         type: 3}
     - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: name
-      value: Casa do Cuscuz
+      value: "Informa\xE7\xF5es"
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: ID
-      value: 8
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: description
-      value: Meu cabra, aqui tem o melhor cuscuz de todo o Nordeste! Venha provar!
+      value: "Aqui voc\xEA pode obter mais informa\xE7\xF5es sobre o evento."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: isInfo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 264
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431969, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 75359f53a2068aa4fae10efb16496125,
+        type: 3}
+    - target: {fileID: 6222486434641431969, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b9e62a15077709488ce1f898603b9d9, type: 3}
 --- !u!114 &2021445268 stripped
@@ -4661,6 +5298,33 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Cantil Perdido
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Foi aqui onde o Cangaceiro perdeu seu cantil! V\xE1 at\xE9 o cartaz,
+        clique em \"Jogo\" e mostre para ele."
+      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4775,33 +5439,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: Cantil Perdido
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Foi aqui onde o Cangaceiro perdeu seu cantil! V\xE1 at\xE9 o cartaz,
-        clique em \"Jogo\" e mostre para ele."
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
@@ -4975,6 +5612,32 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1272634186}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: name
+      value: Rabih Tabatchnik
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: description
+      value: "Amante de Unity e churros! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/rabih-tabatchnik-2447a4186/"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
+        type: 3}
+    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
+        type: 3}
+      propertyPath: ID
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431975, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5089,32 +5752,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1272634186}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: name
-      value: Rabih Tabatchnik
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: description
-      value: "Amante de Unity e churros! Inclusive, seu LinkedIn \xE9 https://www.linkedin.com/in/rabih-tabatchnik-2447a4186/"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a84f519fe151974b9791062597412f5,
-        type: 3}
-    - target: {fileID: 6222486434641431971, guid: 4b9e62a15077709488ce1f898603b9d9,
-        type: 3}
-      propertyPath: ID
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6222486434641431974, guid: 4b9e62a15077709488ce1f898603b9d9,
         type: 3}
