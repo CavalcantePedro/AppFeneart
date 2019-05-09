@@ -4,11 +4,7 @@ using UnityEngine;
 
 public abstract class Web : MonoBehaviour
 {
-    public virtual void OnWebConnected(){
-        
-    }
+    public virtual void OnWebConnected(){}
 
-    public virtual void OnWebLoad(){
-        
-    }
+    public virtual void OnWebLoad(){}
 }

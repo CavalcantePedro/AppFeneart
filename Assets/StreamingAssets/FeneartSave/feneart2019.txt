@@ -1,5 +1,5 @@
 {"products":[{"id":0,"name":"Colar","location":"Av. Mulher Maravilha","price":"2,99"},
             {"id":1,"name":"Fury","location":"Av. São Paulo","price":"67,99"},
-            {"id":1,"name":"Lapís","location":"Av. Papeis e Folhas","price":"0,99"}
+            {"id":1,"name":"Cucuz","location":"Recife","price":"5,99"}
             ]}
 

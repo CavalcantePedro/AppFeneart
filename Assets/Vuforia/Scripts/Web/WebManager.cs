@@ -87,13 +87,14 @@ public class WebManager : MonoBehaviour
         else {
             // Show results as text
             jsonString = www.downloadHandler.text;
+            print(jsonString);
  
             // Or retrieve results as binary data
             byte[] results = www.downloadHandler.data;
         }
 
-        callWeb.OnWebLoad();
         WebSaveData();
+        callWeb.OnWebLoad();
         //print(WebLoadData());
     }
 }

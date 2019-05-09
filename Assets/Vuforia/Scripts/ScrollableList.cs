@@ -28,16 +28,10 @@ public class ScrollableList : Web
 
     public override void OnWebLoad() {
 
-        Itens it = new Itens();
-        Product p = new Product(0, "Colar", "Av. Mulher Maravilha", "2,99");
-        it.products.Add(p);
-
-        string hu = JsonUtility.ToJson(it);
-
         //txt.text = WebManager.WebLoadData();
-        Itens ale = JsonUtility.FromJson<Itens>(WebManager.WebLoadData());
-        //= JsonUtility.FromJson<Itens>(hu);
-        txt.text = ale.products[1].name;
+        Itens it = JsonUtility.FromJson<Itens>(WebManager.WebLoadData());
+
+        txt.text = it.products[0].name;
 
         AdjustContentView(it.products.Count);
         ResetContentView();
@@ -63,7 +57,8 @@ public class ScrollableList : Web
         
         List<GameObject> tempList = new List<GameObject>();
         print(lenght);
-        for(int i = 0; i < lenght + 1; i++){
+
+        for(int i = 0; i < lenght; i++){
             GameObject newItem = Instantiate(itemPrefab, containerRectTransform.position, Quaternion.identity, transform) as GameObject;
             
             ProductCode pc = newItem.GetComponent<ProductCode>();
