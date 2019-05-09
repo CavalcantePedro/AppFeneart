@@ -1,7 +1,5 @@
-{"products": [ 
-    {"id":0,"name":"Pulseira","location":"Av. Jonas Brothes","price":"R$0,99"},
-    {"id":1,"name":"Colar Indigena","location":"Feira Indigena","price":"R$2,99"}, 
-    {"id":2,"name":"Churros","location":"Praça Alimentação","price":"R$3,99"},
-    {"id":3,"name":"Coxinha Nordestina","location":"Praça Alimentação","price":"R$2,99"}
-]}
+{"products":[{"id":0,"name":"Colar","location":"Av. Mulher Maravilha","price":"2,99"},
+            {"id":1,"name":"Fury","location":"Av. São Paulo","price":"67,99"},
+            {"id":1,"name":"Lapís","location":"Av. Papeis e Folhas","price":"0,99"}
+            ]}
 

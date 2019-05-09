@@ -7,13 +7,16 @@ using System.IO;
 public class WebManager : MonoBehaviour
 {
 
-    public static string SITE_LINK;
+    public string SITE_LINK;
+    public Web callWeb;
 
     public static string jsonString;
     private static string streamingPath;
 
     void Start() {
         
+        jsonString = "";
+
         #if UNITY_ANDROID
             streamingPath = "jar:file://" + Application.dataPath + "!/assets/";
         #endif
@@ -55,13 +58,19 @@ public class WebManager : MonoBehaviour
     public static string WebLoadData(){
 
         string path = streamingPath + @"/FeneartSave/feneart2019.txt";
+        string tempText = "";
 
         if(File.Exists(path)){
             using (StreamReader sr = new StreamReader(path))
             {
-                jsonString += sr.ReadLine();
-                print(jsonString);
+                string line;
+                while ((line = sr.ReadLine()) != null) 
+                {
+                    tempText += line;
+                }
             }
+
+            jsonString = tempText;
         }
 
         return jsonString;
@@ -83,6 +92,8 @@ public class WebManager : MonoBehaviour
             byte[] results = www.downloadHandler.data;
         }
 
-        WebLoadData();
+        callWeb.OnWebLoad();
+        WebSaveData();
+        //print(WebLoadData());
     }
 }

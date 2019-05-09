@@ -3,14 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class ScrollableList : MonoBehaviour
+public class ScrollableList : Web
 {   
+    //temp:
+    public Text txt;
+
     [SerializeField] private int itemCount;
     [SerializeField] private Text searchInput;
     [SerializeField] private GameObject notFoundTxt;
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private List<GameObject> products;
     [SerializeField] private List<GameObject> userList; //List for operations
+    [SerializeField] private List<Product> testList;
 
     private string previousSearch;
     RectTransform rowRectTransform;
@@ -20,20 +24,35 @@ public class ScrollableList : MonoBehaviour
     {
         rowRectTransform = itemPrefab.GetComponent<RectTransform>();
         containerRectTransform = GetComponent<RectTransform>();
-
-        AdjustContentView(itemCount);
-        ResetContentView();
-
-        products = CreateList(false, itemCount);
-        CopyList(products, userList);
-        DrawList(userList);
     }
 
-    void ResetContentView(){
+    public override void OnWebLoad() {
+
+        Itens it = new Itens();
+        Product p = new Product(0, "Colar", "Av. Mulher Maravilha", "2,99");
+        it.products.Add(p);
+
+        string hu = JsonUtility.ToJson(it);
+
+        //txt.text = WebManager.WebLoadData();
+        Itens ale = JsonUtility.FromJson<Itens>(WebManager.WebLoadData());
+        //= JsonUtility.FromJson<Itens>(hu);
+        txt.text = ale.products[1].name;
+
+        AdjustContentView(it.products.Count);
+        ResetContentView();
+
+        products = CreateList(false, it.products.Count);
+        CopyList(products, userList);
+        DrawList(userList);
+
+    }
+
+    public void ResetContentView(){
         containerRectTransform.position = new Vector3(containerRectTransform.position.x, 0, 0);
     }
 
-    void AdjustContentView(int count){
+    public void AdjustContentView(int count){
         float scrollHeight = ((200 + 10) * count)/2; // (height + spacing) * itemCount;
 
         containerRectTransform.offsetMin = new Vector2(containerRectTransform.offsetMin.x, -scrollHeight);
@@ -43,17 +62,18 @@ public class ScrollableList : MonoBehaviour
     List<GameObject> CreateList(bool draw, int lenght){
         
         List<GameObject> tempList = new List<GameObject>();
-        
-        for(int i = 0; i < lenght; i++){
+        print(lenght);
+        for(int i = 0; i < lenght + 1; i++){
             GameObject newItem = Instantiate(itemPrefab, containerRectTransform.position, Quaternion.identity, transform) as GameObject;
             
             ProductCode pc = newItem.GetComponent<ProductCode>();
 
             if(pc == null) print("ERRO, nullComponent! in ScrollableList");
 
-
-            //I stoped here!!
-            pc.SetData("Chaveiro", 1);
+            Itens it = JsonUtility.FromJson<Itens>(WebManager.WebLoadData());
+            //print(WebManager.WebLoadData());
+            pc.SetData(it.products[i].name, it.products[i].price);
+            testList = it.products;
 
             tempList.Add(newItem);
             

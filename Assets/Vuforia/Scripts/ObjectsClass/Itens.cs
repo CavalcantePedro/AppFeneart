@@ -6,4 +6,5 @@ using UnityEngine;
 public class Itens
 {
     public List<Product> products = new List<Product>();
+    //public List<string> events = new List<string>();
 }
