@@ -36,7 +36,7 @@ public class ProductCode : MonoBehaviour
     }
 
     void Redirect(){
-        Singleton.GetInstance.sceneChanger.ProductRedirect("Rabih Tabatchnik");
+        Singleton.GetInstance.sceneChanger.ProductRedirect(location);
     }
 
 }

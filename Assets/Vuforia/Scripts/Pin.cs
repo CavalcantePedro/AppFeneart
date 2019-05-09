@@ -65,9 +65,14 @@ void Start()
   yield return new WaitForSeconds(0.1f);
   Camera.main.orthographicSize = 2.5f;
   for(;;)
-  {
+  {  
   Camera.main.transform.position = Vector2.MoveTowards(Camera.main.transform.position , transform.position , 0.1f);  
   yield return new WaitForSeconds(0.01f);
+ if((Camera.main.transform.position - transform.position).magnitude == 90)
+  {
+    break;
+
+  }
   }
 }
 public void SendInformation()

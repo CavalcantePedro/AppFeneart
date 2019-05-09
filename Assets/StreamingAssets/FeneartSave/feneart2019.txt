@@ -1,5 +1,7 @@
-{"products":[{"id":0,"name":"Colar","location":"Av. Mulher Maravilha","price":"2,99"},
-            {"id":1,"name":"Fury","location":"Av. São Paulo","price":"67,99"},
-            {"id":1,"name":"Cucuz","location":"Recife","price":"5,99"}
+{"products":[{"id":0,"name":"Bottom do Pikachu","location":"Lojinho do Erick","price":"2,99"},
+            {"id":1,"name":"Chaveiro de Cangaceiro","location":"Lojinho do Erick","price":"6,99"},
+            {"id":2,"name":"Cuscuz","location":"Casa do Cuscuz","price":"5,99"},
+            {"id":3,"name":"Café Cafeínoso","location":"Casa do Cuscuz","price":"3,99"},
+            {"id":4,"name":"Cabo USB reciclável","location":"Lojinho do Erick","price":"6,99"}
             ]}
 
